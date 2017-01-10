@@ -1,0 +1,16 @@
+{
+  "name": "https-to-http-proxy",
+  "version": "1.0.0",
+  "description": "HTTPS to HTTP proxy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vanco Stojkov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  }
+}
