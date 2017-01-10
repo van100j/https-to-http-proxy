@@ -29,8 +29,7 @@ app.get(['/http://', '/http://*'], function(req, res) {
 
   queryString = queryString ? "?" + queryString : "";
 
-  console.log('http://' + req.params[0] + queryString);
-
+  res.header('Access-Control-Allow-Origin', '*');
   if(url = req.params[0]) {
     request('http://' + url + queryString, function (error, response, body) {
       console.log(body);
